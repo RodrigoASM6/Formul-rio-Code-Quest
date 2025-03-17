@@ -39,7 +39,7 @@
         <option value="avancado">Avançado</option>
       </select>
 
-      <label>Tipo de Participação</label>
+      <label>Tipo de Participação:</label>
 
       <div>
         <input
@@ -49,44 +49,80 @@
           value="individual"
           required
         />
-        </div>
-
-        <div>
-          <input type="radio" class="equipe" name="participacao" value="equipe">
-          <label for="equipe">Em Equipe</label>
-          <input type="text" class="nomeEquipe" name="nomeEquipe" placeholder="Nome da Equipe">
-        </div>
-
-        <label>Linguagens de Programação que Domina</label>
-
-        <div>
-          <input type="checkbox" class="javascript" name="linguagens" value="JavaScript">
-          <label for="javascript">JavaScript</label>
-        </div>
-
-        <div>
-          <input type="checkbox" class="python" name="linguagens" value="Python">
-          <label for="python">Python</label>
-        </div>
-
-        <div>
-          <input type="checkbox" class="java" name="linguagens" value="Java">
-          <label for="java">Java</label>
-        </div>
-        
-        <div>
-          <input type="checkbox" class="cpp" name="linguagens" value="C++">
-          <label for="cpp">C++</label>
-        </div>
-
-        <div>
-          <input type="checkbox" class="outro" name="linguagens" value="Outro">
-          <label for="outro">Outro</label>
-          <input type="text" id="outroLinguagem" name="outroLinguagem" placeholder="Especificar">
-        </div>
-
-        
+        <label for="individual">Individual</label>
       </div>
+
+      <div>
+        <input type="radio" class="equipe" name="participacao" value="equipe" />
+        <label for="equipe">Em equipe</label>
+        <input
+          type="text"
+          class="nomeEquipe"
+          name="nomeEquipe"
+          placeholder="Nome da equipe"
+        />
+      </div>
+
+      <label>Linguagens de Programação que Domina:</label>
+
+      <div>
+        <input
+          type="checkbox"
+          class="javascript"
+          name="linguagens"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          class="python"
+          name="linguagens"
+          value="Python"
+        />
+        <label for="python">Python</label>
+      </div>
+
+      <div>
+        <input type="checkbox" class="java" name="linguagens" value="Java" />
+        <label for="java">Java</label>
+      </div>
+
+      <div>
+        <input type="checkbox" class="cpp" name="linguagens" value="C++" />
+        <label for="cpp">C++</label>
+      </div>
+
+      <div>
+        <input type="checkbox" class="outro" name="linguagens" value="Outro" />
+        <label for="outro">Outro</label>
+        <input
+          type="text"
+          class="outroLinguagem"
+          name="outroLinguagem"
+          placeholder="Especificar"
+        />
+      </div>
+
+      <label for="disponibilidade">Disponibilidade:</label>
+      <select name="" class="disponibilidade" name="disponibilidade" required>
+        <option value="">Selecione...</option>
+        <option value="sabado">Sábado (09:00 - 18:00)</option>
+        <option value="domingo">Domingo (09:00 - 18:00)</option>
+        <option value="Ambos os dias"></option>
+      </select>
+
+      <label for="comentarios">Comentários ou perguntas adicionais:</label>
+      <textarea name="comentarios" class="comentarios" rows="4"></textarea>
+
+      <div>
+        <input type="checkbox" name="termos" class="termos" required />
+        <label for="termos">Lie e aceito os termos e condições</label>
+      </div>
+
+      <button type="submit">Enviar Inscrição</button>
     </form>
   </body>
 </html>
