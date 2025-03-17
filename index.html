@@ -16,23 +16,23 @@
       individualmente.
     </p>
 
-    <form action="">
+    <form class="inscricao" action="">
       <h1>Preencha o forumulário para se inscrever no evento</h1>
 
       <label for="nome">Nome Completo:</label>
-      <input type="text" name="nome" required />
+      <input type="text" class="nome" name="nome" required />
 
-      <label for="E-mail">E-mail:</label>
-      <input type="email" name="email" required />
+      <label for="email">E-mail:</label>
+      <input type="email" class="email" name="email" required />
 
       <label for="telefone">Telefone</label>
-      <input type="text" name="telefone" required />
+      <input type="text" class="telefone" name="telefone" required />
 
       <label for="nascimento">Data de Nascimento</label>
-      <input type="date" name="nascimento" required />
+      <input type="date" class="nascimento" name="nascimento" required />
 
       <label for="experiencia">Nível de Experiência</label>
-      <select name="experiencia" id="" required>
+      <select class="experiencia" name="experiencia" id="" required>
         <option value="">Selecione...</option>
         <option value="iniciante">Iniciante</option>
         <option value="intermediario">Intermediário</option>
@@ -42,7 +42,50 @@
       <label>Tipo de Participação</label>
 
       <div>
-        <input type="radio" name participacao value="individual" required />
+        <input
+          type="radio"
+          class="individual"
+          name="participacao"
+          value="individual"
+          required
+        />
+        </div>
+
+        <div>
+          <input type="radio" class="equipe" name="participacao" value="equipe">
+          <label for="equipe">Em Equipe</label>
+          <input type="text" class="nomeEquipe" name="nomeEquipe" placeholder="Nome da Equipe">
+        </div>
+
+        <label>Linguagens de Programação que Domina</label>
+
+        <div>
+          <input type="checkbox" class="javascript" name="linguagens" value="JavaScript">
+          <label for="javascript">JavaScript</label>
+        </div>
+
+        <div>
+          <input type="checkbox" class="python" name="linguagens" value="Python">
+          <label for="python">Python</label>
+        </div>
+
+        <div>
+          <input type="checkbox" class="java" name="linguagens" value="Java">
+          <label for="java">Java</label>
+        </div>
+        
+        <div>
+          <input type="checkbox" class="cpp" name="linguagens" value="C++">
+          <label for="cpp">C++</label>
+        </div>
+
+        <div>
+          <input type="checkbox" class="outro" name="linguagens" value="Outro">
+          <label for="outro">Outro</label>
+          <input type="text" id="outroLinguagem" name="outroLinguagem" placeholder="Especificar">
+        </div>
+
+        
       </div>
     </form>
   </body>
